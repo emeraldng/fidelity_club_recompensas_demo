@@ -1,25 +1,57 @@
 @use "variables" as *;
 
+/*==============================
+=            Mobile
+==============================*/
+
 @mixin mobile {
+
     @media (max-width: $mobile) {
+
         @content;
+
     }
+
 }
+
+/*==============================
+=            Tablet
+==============================*/
 
 @mixin tablet {
-    @media (min-width: $tablet) and (max-width: 1024px) {
+
+    @media (min-width: $tablet) and (max-width:1024px) {
+
         @content;
+
     }
+
 }
+
+/*==============================
+=            Laptop
+==============================*/
 
 @mixin laptop {
-    @media (min-width: $laptop) and (max-width: 1280px) {
+
+    @media (min-width: $laptop) and (max-width:1280px) {
+
         @content;
+
     }
+
 }
 
+/*==============================
+=            Desktop
+==============================*/
+
 @mixin desktop {
+
     @media (min-width: $desktop) {
+
         @content;
+
     }
+
 }

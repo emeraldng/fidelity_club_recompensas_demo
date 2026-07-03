@@ -6,15 +6,21 @@ body{
     // background:$white;
 }
 
-.container {
-    width: 100%;
-    max-width: $container-width;
-    margin-inline: auto;
-    padding-inline: $container-padding;
+.container{
 
-     @include desktop {
-        max-width: $container-width-xl;
+    width:100%;
+    max-width:$container-width;
+
+    margin-inline:auto;
+
+    padding-inline:$container-padding;
+
+    @include desktop{
+
+        max-width:$container-width-xl;
+
     }
+
 }
 
 section{
