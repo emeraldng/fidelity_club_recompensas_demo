@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+// Mobile grande
+@mixin mobile {
+    @media (min-width: $mobile) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+// Laptop
+@mixin laptop {
+    @media (min-width: $laptop) {
+        @content;
+    }
+}
+
+// Desktop
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+// Landscape
+@mixin landscape {
+    @media (orientation: landscape) {
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body{
+    background:$white;
+}
+
+.container{
+    // @include container;
+}
+
+section{
+    padding:80px 0;
+}
