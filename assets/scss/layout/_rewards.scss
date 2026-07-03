@@ -1,0 +1,279 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.rewards {
+
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+
+    &__title {
+        margin-bottom: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: $black;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__card {
+
+        width: 100%;
+        max-width: 320px;
+
+        background: $white;
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        box-shadow: 0 5px 15px rgba(0,0,0,.12);
+
+        transition:
+            transform .35s ease,
+            box-shadow .35s ease;
+
+    }
+
+    &__media {
+            padding: 1.5rem;
+        position: relative;
+
+        height: 280px;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background: rgba(255,255,255,.55);
+
+            opacity: 0;
+
+            transition: opacity .35s ease;
+
+            z-index: 1;
+
+        }
+
+    }
+
+    &__image {
+
+        display: block;
+
+        max-width: 100%;
+        max-height: 100%;
+
+        object-fit: contain;
+
+        transition: opacity .35s ease;
+
+    }
+
+    &__button {
+
+        position: absolute;
+
+        top: 85%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) scale(.9);
+
+        width: 190px;
+        height: 58px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #f39200;
+
+        border-radius: 15px;
+
+        color: $white;
+
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all .35s ease;
+
+        z-index: 2;
+
+    }
+
+    &__body {
+
+        padding: 1.5rem;
+
+        text-align: center;
+
+        transition: opacity .35s ease;
+
+    }
+
+    &__name {
+
+        margin-bottom: 1rem;
+
+        color: #666;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.25;
+
+    }
+
+    &__points {
+
+        font-size: 1.25rem;
+        font-weight: 700;
+
+        color: $black;
+
+    }
+
+    /* ===============================
+       Hover
+    =============================== */
+
+    &__card:hover {
+
+        transform: translateY(-6px);
+
+        box-shadow: 0 18px 35px rgba(0,0,0,.22);
+
+    }
+
+    &__card:hover &__media::after {
+
+        opacity: 1;
+
+    }
+
+    &__card:hover &__image {
+
+        opacity: .30;
+
+    }
+
+    &__card:hover &__body {
+
+        opacity: .35;
+
+    }
+
+    &__card:hover &__button {
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+
+    /* ===============================
+       Tablet
+    =============================== */
+
+    @include tablet {
+
+        &__list {
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+        }
+
+        &__card {
+
+            max-width: calc(50% - 1rem);
+
+        }
+
+    }
+
+    /* ===============================
+       Mobile
+    =============================== */
+
+    @include mobile {
+
+        padding: 3rem 0;
+
+        &__title {
+
+            font-size: 2rem;
+
+        }
+
+        &__list {
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 1.5rem;
+
+        }
+
+        &__card {
+
+            max-width: 100%;
+
+        }
+
+        &__media {
+
+            height: 240px;
+
+            &::after {
+
+                opacity: .35;
+
+            }
+
+        }
+
+        &__button {
+
+            opacity: 1;
+            visibility: visible;
+
+            transform: translate(-50%, -50%);
+
+            width: 170px;
+            height: 50px;
+
+            font-size: 1.2rem;
+
+        }
+
+        &__body {
+
+            opacity: 1;
+
+        }
+
+    }
+
+}

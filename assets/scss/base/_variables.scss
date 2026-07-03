@@ -2,21 +2,25 @@
 $font-primary: "Montserrat", sans-serif;
 
 // Colores
-$primary: #0d6efd;
-$secondary: #f5b400;
+$primary: #EC1C24;
+$secondary: #F2F2F2;
 $white: #fff;
 $black: #000;
 $text: #333;
-
-// Tamaños
-$container: 1200px;
-$gutter: 20px;
 
 // Breakpoints
 $mobile: 480px;
 $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1280px;
+
+// Tamaños
+$container-width: 1024px;
+$container-padding: 20px;
+$container-width: 1024px;
+$container-width-xl: 1400px;
+
+
 
 // Transiciones
 $transition: .3s ease;

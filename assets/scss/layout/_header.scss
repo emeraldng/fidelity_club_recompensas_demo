@@ -1,19 +1,21 @@
+
+@use "../base/variables" as *;
 @use "../base/mixins" as *;
 
 .hero {
-    padding: 2rem 0;
+    // padding: 2rem 0;
 
-    @include tablet {
-        padding: 4rem 0;
-    }
+    // @include tablet {
+    //     padding: 4rem 0;
+    // }
 
-    @include laptop {
-        padding: 5rem 0;
-    }
+    // @include laptop {
+    //     padding: 5rem 0;
+    // }
 
-    @include desktop {
-        padding: 6rem 0;
-    }
+    // @include desktop {
+    //     padding: 6rem 0;
+    // }
 }
 .hero__content{
 
@@ -21,4 +23,21 @@
 
 .hero__slider{
 
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* blanco */
+}
+
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+    background: $white;
+    opacity: 1;
 }

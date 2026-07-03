@@ -4,39 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fidelity Recompensas Demo</title>
+    <!-- IE Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Theme & Meta-->
+    <meta name="theme-color" content="#0056D2">
+    <title>Fidelity | Recompensas con tus puntos</title>
+    <meta name="description"
+        content="Únete a nuestro programa de recompensas y acumula puntos para obtener descuentos, promociones exclusivas y grandes beneficios.">
+    <meta name="author" content="Fidelity">
+    <meta name="robots" content="index,follow">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
 
 <body>
-    <div class="hero-slider swiper">
+    <header class="">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__content">
+                    <div class="navbar__user-data">
+                        <span class="icon-flag"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></span>
+                        <div class="">
+                            <p class="navbar__user-name">RAFAEL GALICIA VENDEDOR - <span>114 puntos</span></p>
+                            <p class="navbar_user-role">Vendedores</p>
+                        </div>
+                    </div>
 
-        <div class="swiper-wrapper">
+                    <button class="navbar__close-session-button">
+                        <i class="icon-close"></i>
 
-            <div class="swiper-slide">
-                Slide 1
+                        <span class="navbar__close-session-text">
+                            CERRAR SESIÓN
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-slider swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero/banner01.webp" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero/banner02.webp" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero/banner03.webp" alt="">
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-button-next"></div>
+
             </div>
 
-            <div class="swiper-slide">
-                Slide 2
-            </div>
+        </div>
+    </header>
 
-            <div class="swiper-slide">
-                Slide 3
+    <section class="rewards">
+
+        <div class="container">
+
+            <h2 class="rewards__title">
+                Premios Destacados
+            </h2>
+
+            <div class="rewards__list">
+
+                <!-- Card -->
+                <article class="rewards__card">
+
+                    <div class="rewards__media">
+
+                        <img src="assets/images/rewards/reward_01.webp" alt="Certificado PlayStation Store de 20 USD"
+                            class="rewards__image">
+
+                        <a href="#" class="rewards__button">
+                            Canjea Ya
+                        </a>
+
+                    </div>
+
+                    <div class="rewards__body">
+
+                        <h3 class="rewards__name">
+                            Certificado <br>
+                            PlayStation 20 USD
+                        </h3>
+
+                        <p class="rewards__points">
+                            787 puntos
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Card -->
+                <article class="rewards__card">
+
+                    <div class="rewards__media">
+
+                        <img src="assets/images/rewards/reward_02.webp" alt="CK Be 200 ml EDT Caballero Calvin Klein"
+                            class="rewards__image">
+
+                        <a href="#" class="rewards__button">
+                            Canjea Ya
+                        </a>
+
+                    </div>
+
+                    <div class="rewards__body">
+
+                        <h3 class="rewards__name">
+                            CK Be 200 ml EDT <br>
+                            Caballero Calvin Klein
+                        </h3>
+
+                        <p class="rewards__points">
+                            2562 puntos
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Card -->
+                <article class="rewards__card">
+
+                    <div class="rewards__media">
+
+                        <img src="assets/images/rewards/reward_03.webp" alt="Tarjeta Starbucks" class="rewards__image">
+
+                        <a href="#" class="rewards__button">
+                            Canjea Ya
+                        </a>
+
+                    </div>
+
+                    <div class="rewards__body">
+
+                        <h3 class="rewards__name">
+                           Certificado <br> STARBUACKS CARD
+                        </h3>
+
+                        <p class="rewards__points">
+                            1247 puntos
+                        </p>
+
+                    </div>
+
+                </article>
+
             </div>
 
         </div>
 
-        <div class="swiper-pagination"></div>
+    </section>
 
-        <div class="swiper-button-prev"></div>
+    <footer class="footer">
 
-        <div class="swiper-button-next"></div>
+        <div class="container">
 
-    </div>
-    <span class="icon-flag"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+            <div class="footer__content">
 
+                <div class="footer__support">
+
+                    <i class="icon-mobile footer__support-icon"></i>
+
+                    <div class="footer__support-info">
+                        <p class="footer__support-title">Centro de atención</p>
+                        <a href="tel:01800423333" class="footer__support-phone">
+                            01 800 42 3333 Opción 3
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer__actions">
+
+                    <a href="#" class="footer__link">
+                        Aviso de privacidad
+                    </a>
+
+                    <span class="footer__divider">|</span>
+
+                    <a href="#" class="footer__link">
+                        Términos y Condiciones
+                    </a>
+
+                    <span class="footer__divider">|</span>
+
+                    <div class="footer__social">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="icon-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="icon-instragram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
     <script src="assets/js/libs/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

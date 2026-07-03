@@ -1,12 +1,20 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+
 body{
-    background:$white;
+    // background:$white;
 }
 
-.container{
-    // @include container;
+.container {
+    width: 100%;
+    max-width: $container-width;
+    margin-inline: auto;
+    padding-inline: $container-padding;
+
+     @include desktop {
+        max-width: $container-width-xl;
+    }
 }
 
 section{
